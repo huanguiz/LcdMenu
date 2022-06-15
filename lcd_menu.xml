@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MENU>
+    <!--one item behalfs one contacted person.-->
+    <M1 name="运行信息" func="default">
+        <M2 name="通信状态" func="default">
+            <M3 name="远动链路" func="linkRemote"></M3>
+            <M3 name="保信链路" func="linkProtect"></M3>
+            <M3 name="PMU链路" func="linkPMU"></M3>
+            <M3 name="间隔层设备状态" func="stateDevice"></M3>
+        </M2>
+        <M2 name="实时数据" func="default">
+            <M3 name="遥信" func="dataYX"></M3>
+            <M3 name="遥测" func="dataYC"></M3>
+            <M3 name="遥控" func="dataYK"></M3>
+        </M2>
+        <M2 name="事件记录" func="default">
+            <M3 name="SOE记录" func="recordSOE"></M3>
+            <M3 name="遥控记录" func="recordYK"></M3>
+            <M3 name="事件日志" func="recordEvent"></M3>
+        </M2>
+        <M2 name="对时状态" func="stateSynchronize"></M2>
+        <M2 name="报警状态" func="stateAlarm"></M2>
+        <M2 name="双机状态" func="stateMain"></M2>
+        <M2 name="程序版本" func="version"></M2>
+    </M1>
+    <M1 name="装置参数" func="default">
+        <M2 name="网络设置" func="default">
+            <M3 name="IP设置" func="setIPconfig"></M3>
+            <M3 name="路由表" func="setRouting"></M3>
+            <M3 name="MAC地址" func="setMAC"></M3>
+        </M2>
+        <M2 name="密码设置" func="setPassword"></M2>
+        <M2 name="液晶设置" func="setLCD"></M2>
+        <M2 name="通道设置" func="setChannel"></M2>
+        <M2 name="功能投退" func="setFuncExit"></M2>
+        <M2 name="时钟设置" func="setClock"></M2>
+    </M1>
+    <M1 name="调试" func="default">
+        <M2 name="网络测试" func="testNetwork"></M2>
+        <M2 name="开出测试" func="testSignalOut"></M2>
+        <M2 name="遥控测试" func="testYK"></M2>
+        <M2 name="置数测试" func="testNumberSet"></M2>
+        <M2 name="清除信息" func="clearInfo"></M2>
+    </M1>
+    <M1 name="其他" func="default">
+        <M2 name="屏幕测试" func="testLCD"></M2>
+        <M2 name="按键测试" func="testKey"></M2>
+        <M2 name="LED测试" func="testLED"></M2>
+        <M2 name="232串口自环测试" func="testSerialPort232"></M2>
+        <M2 name="232串口配合311自环测试" func="testSerialPort232to311"></M2>
+        <M2 name="485串口自环测试" func="testSerialPort485"></M2>
+        <M2 name="B码测试" func="TestCodeB"></M2>
+        <M2 name="转用户态" func="convertUser"></M2>
+        <M2 name="电源" func="default">
+            <M3 name="重启" func="reboot"></M3>
+            <M3 name="关机" func="poweroff"></M3>
+        </M2>
+    </M1>
+    <!--more contacted persons.-->
+</MENU>

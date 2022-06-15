@@ -1,0 +1,1 @@
+g++ menu.cpp func.cpp tinystr.cpp tinyxml.cpp tinyxmlerror.cpp tinyxmlparser.cpp -o menu.exe
